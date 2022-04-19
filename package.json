@@ -1,5 +1,6 @@
 {
   "name": "wave-function-collapse-algorithm",
+  "homepage": "https://jakubcendrowski.pl/wave-function-collapse-algorithm/build",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
