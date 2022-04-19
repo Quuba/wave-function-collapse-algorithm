@@ -8,8 +8,8 @@
 # testing
 /coverage
 
-#development
-/.idea
+#webstorm
+/.idea/workspace.xml
 
 # production
 
