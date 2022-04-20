@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Sudoku from "./sudoku/Sudoku";
 
 function App() {
     return (
@@ -11,11 +12,9 @@ function App() {
                     Shown by sudoku
 
                 </p>
-                <p>
-                </p>
             </header>
             <div className={'sudoku-container'}>
-
+                <Sudoku/>
             </div>
         </div>
     );

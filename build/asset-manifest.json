@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/wave-function-collapse-algorithm/build/static/css/main.073c9b0a.css",
-    "main.js": "/wave-function-collapse-algorithm/build/static/js/main.f6f601bb.js",
+    "main.css": "/wave-function-collapse-algorithm/build/static/css/main.b452f5a1.css",
+    "main.js": "/wave-function-collapse-algorithm/build/static/js/main.b22df221.js",
     "static/js/787.8841f780.chunk.js": "/wave-function-collapse-algorithm/build/static/js/787.8841f780.chunk.js",
     "index.html": "/wave-function-collapse-algorithm/build/index.html",
-    "main.073c9b0a.css.map": "/wave-function-collapse-algorithm/build/static/css/main.073c9b0a.css.map",
-    "main.f6f601bb.js.map": "/wave-function-collapse-algorithm/build/static/js/main.f6f601bb.js.map",
+    "main.b452f5a1.css.map": "/wave-function-collapse-algorithm/build/static/css/main.b452f5a1.css.map",
+    "main.b22df221.js.map": "/wave-function-collapse-algorithm/build/static/js/main.b22df221.js.map",
     "787.8841f780.chunk.js.map": "/wave-function-collapse-algorithm/build/static/js/787.8841f780.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.f6f601bb.js"
+    "static/css/main.b452f5a1.css",
+    "static/js/main.b22df221.js"
   ]
 }

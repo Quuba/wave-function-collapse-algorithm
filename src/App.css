@@ -1,8 +1,5 @@
 .App {
   text-align: center;
-}
-
-.App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -11,5 +8,15 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.sudoku-container{
+  width: 70vh;
+  height: 70vh;
+
+  min-height: 500px;
+  min-width: 500px;
+
+  border: 1px solid whitesmoke;
 }
 
