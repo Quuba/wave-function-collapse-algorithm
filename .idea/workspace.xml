@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="106f7ffa-3fa1-431c-8f09-1c47cbe48266" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/sudoku/BigCell.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sudoku/Cell.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sudoku/sudoku.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sudoku/Sudoku.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/sudoku/Sudoku.tsx" afterDir="false" />
-    </list>
+    <list default="true" id="106f7ffa-3fa1-431c-8f09-1c47cbe48266" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -73,6 +65,7 @@
       <workItem from="1650400942732" duration="947000" />
       <workItem from="1650469766542" duration="20000" />
       <workItem from="1650480100773" duration="3729000" />
+      <workItem from="1650553632996" duration="93000" />
     </task>
     <servers />
   </component>
