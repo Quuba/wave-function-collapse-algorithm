@@ -27,12 +27,10 @@ const App = () => {
                 </p>
             </header>
             <div className={'sudoku-container'}>
-                <div className={'Sudoku'}>
-                    <div id={'grid'}>
-                        {cells.cells.map((cell) => <CellComponent value={cell.possibleValues[0]}
-                                                                          posX={cell.posX} posY={cell.posY}
-                                                                          possibleValues={cell.possibleValues}/>)}
-                    </div>
+                <div id={'grid'}>
+                    {cells.cells.map((cell) => <CellComponent value={cell.possibleValues[0]}
+                                                              posX={cell.posX} posY={cell.posY}
+                                                              possibleValues={cell.possibleValues}/>)}
                 </div>
             </div>
             <button onClick={GenerateCells}>Generate</button>
