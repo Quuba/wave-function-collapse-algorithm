@@ -1,40 +1,50 @@
-.Sudoku {
-    width: 100%;
-    height: 100%;
-}
+/*.Sudoku {*/
+/*    width: 100%;*/
+/*    height: 100%;*/
 
-#grid {
-    width: 100%;
-    height: 100%;
+/*}*/
 
-    display: grid;
+/*#grid {*/
+/*    width: 100%;*/
+/*    height: 100%;*/
 
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-}
+/*    display: grid;*/
 
-.BigCell {
-    justify-self: center;
-    align-self: center;
+/*    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;*/
+/*    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;*/
+/*}*/
 
-    min-width: 10px;
-    min-height: 10px;
+/*.BigCell {*/
+/*    justify-self: center;*/
+/*    align-self: center;*/
 
-    height: 100%;
-    width: 100%;
+/*    min-width: 10px;*/
+/*    min-height: 10px;*/
 
-    display: grid;
+/*    height: 100%;*/
+/*    width: 100%;*/
 
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-}
+/*    display: grid;*/
 
-.Cell {
-    box-sizing: border-box;
+/*    grid-template-columns: 1fr 1fr 1fr;*/
+/*    grid-template-rows: 1fr 1fr 1fr;*/
+/*}*/
 
-    height: 100%;
-    width: 100%;
+/*.Cell {*/
+/*    box-sizing: border-box;*/
 
-    background-color: indianred;
-    border: 1px solid black;
-}
+/*    height: 100%;*/
+/*    width: 100%;*/
+/*    aspect-ratio: 1/1;*/
+/*    background-color: indianred;*/
+/*    border: 1px solid black;*/
+/*    font-size: 60%;*/
+
+/*    display: grid;*/
+
+/*    grid-template-columns: 1fr 1fr 1fr;*/
+/*    grid-template-rows: 1fr 1fr 1fr;*/
+/*}*/
+/*.Cell span:hover{*/
+/*    background: #282c34;*/
+/*}*/

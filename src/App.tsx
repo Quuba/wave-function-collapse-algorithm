@@ -1,23 +1,51 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import Sudoku from "./sudoku/Sudoku";
+import CellComponent from "./components/CellComponent";
+import {Provider, useDispatch, useSelector} from "react-redux";
+import store, {addCell, resetCells, selectCells} from "./store/store";
 
-function App() {
+
+const App = () => {
+    const cells = useSelector(selectCells);
+    const dispatch = useDispatch();
+
+    function GenerateCells() {
+        dispatch(resetCells())
+        for (let i = 0; i < 9; i++) {
+            for (let j = 0; j < 9; j++) {
+                dispatch(addCell({posX: j, posY: i, possibleValues: [1, 2, 3, 4, 5, 6, 7, 8, 9], value: null}));
+            }
+        }
+    }
+
     return (
         <div className="App">
             <header className="App-header">
                 <p>
                     Wave function collapse algorithm <br/>
-                    Shown by sudoku
-
+                    Demonstrated with sudoku
                 </p>
             </header>
             <div className={'sudoku-container'}>
-                <Sudoku/>
+                <div className={'Sudoku'}>
+                    <div id={'grid'}>
+                        {cells.cells.map((cell) => <CellComponent value={cell.possibleValues[0]}
+                                                                          posX={cell.posX} posY={cell.posY}
+                                                                          possibleValues={cell.possibleValues}/>)}
+                    </div>
+                </div>
             </div>
+            <button onClick={GenerateCells}>Generate</button>
         </div>
     );
-}
 
-export default App;
+
+};
+
+const AppWrapper = () => (
+    <Provider store={store}>
+        <App/>
+    </Provider>
+)
+
+export default AppWrapper;
