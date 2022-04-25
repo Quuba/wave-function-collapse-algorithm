@@ -2,22 +2,15 @@ import React from 'react';
 import './App.css';
 import CellComponent from "./components/CellComponent";
 import {Provider, useDispatch, useSelector} from "react-redux";
-import store, {addCell, resetCells, selectCells} from "./store/store";
+import store, {addCell, generateCells, resetCells, selectCells} from "./store/store";
 
 
 const App = () => {
     const cells = useSelector(selectCells);
     const dispatch = useDispatch();
 
-    function GenerateCells() {
-        dispatch(resetCells())
-        for (let i = 0; i < 9; i++) {
-            for (let j = 0; j < 9; j++) {
-                dispatch(addCell({posX: j, posY: i, possibleValues: [1, 2, 3, 4, 5, 6, 7, 8, 9], value: null}));
-            }
-        }
-    }
 
+    //TODO: highlight 'big cell' borders
     return (
         <div className="App">
             <header className="App-header">
@@ -28,12 +21,12 @@ const App = () => {
             </header>
             <div className={'sudoku-container'}>
                 <div id={'grid'}>
-                    {cells.cells.map((cell) => <CellComponent value={cell.possibleValues[0]}
+                    {cells.cells.map((cell) => <CellComponent key={cell.posX + cell.posY *9} value={cell.possibleValues[0]}
                                                               posX={cell.posX} posY={cell.posY}
                                                               possibleValues={cell.possibleValues}/>)}
                 </div>
             </div>
-            <button onClick={GenerateCells}>Generate</button>
+            <button onClick={event => dispatch(generateCells())}>Generate</button>
         </div>
     );
 

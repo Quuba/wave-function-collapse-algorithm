@@ -8,13 +8,13 @@ const CellComponent: FC<ICell> = ({value, possibleValues, posX, posY}) => {
     const dispatch = useDispatch();
 
     const handleClick = (event: any, x: number, y: number) => {
-
         const updatedCell: ICell = {
             posX: x, posY: y, possibleValues: [event.target.innerHTML], value: null
 
         }
         dispatch(updateCell(updatedCell))
     }
+    let spanIndex = 0;
 
     const classNames = [
         'Cell',
